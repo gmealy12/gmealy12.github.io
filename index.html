@@ -14581,7 +14581,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
  5.1 <a href="#Inhibitors">Inhibitors</a> <br>
  5.2 <a href="#Rift-Herald">Rift Herald</a> <br>
  5.3 <a href="#Dragon">Dragon</a> <br>
- 5.4 <a href="#Win-Rate-Comparison">Win Rate Comparison</a> <br></li>
+ 5.4 <a href="#Win-Percentage-Comparison">Win Percentage Comparison</a> <br></li>
 <li><a href="#Using-Machine-Learning-to-Predict-the-Winner-of-a-Game">Using Machine Learning to Predict the Winner of a Game</a> <br>
  6.1 <a href="#Multiple-Holdout-Sets">Multiple Holdout Sets</a> <br></li>
 <li><a href="#ADC-Itemization">ADC Itemization</a> <br>
@@ -14598,7 +14598,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>League of Legends is currently the largest Multiplayer Online Battle Arena (MOBA) video game, developed by Riot Games. Each match is comprised of two teams of five players. Each team is tasked with destroying the Nexus of the opposing team, and the first to do such wins the game. The Nexus is located in the heart of each team's base, making it difficult to get to. Along with advantages arising from fighting other players, there are also neutral objectives on the map that either team may take. These neutral objectives are located somewhat centrally so each team has a relatively equal chance of taking them. Neutral objectives grant some type of buff or other unique advantage with the goal of favoring the team that takes said objective.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>League of Legends is currently the largest Multiplayer Online Battle Arena (MOBA) video game, developed by Riot Games. Each match is comprised of two teams of five players. Each team is tasked with destroying the Nexus of the opposing team, and the first to do so wins the game. The Nexus is located in the heart of each team's base, making it difficult to get to. Along with advantages arising from fighting other players, there are also neutral objectives on the map that either team may take. These neutral objectives are located somewhat centrally so each team has a relatively equal chance of taking them. Neutral objectives grant some type of buff or other unique advantage with the goal of favoring the team that takes said objective.</p>
 
 </div>
 </div>
@@ -14696,7 +14696,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We will work a lot with 'info.participants' and 'info.teams' which are nested data structures. This adds a layer of complication to working with the data and is why the match data is loop iterated often as we move forward.</p>
+<p>Note that 'info.participants' and 'info.teams' are nested data structures. This adds a layer of complication to working with the data. We will use these columns a lot for this analysis, hence why match_data is loop iterated often as we move forward.</p>
 
 </div>
 </div>
@@ -15205,7 +15205,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Impacts-of-Other-Objectives">Impacts of Other Objectives<a class="anchor-link" href="#Impacts-of-Other-Objectives">&#182;</a></h2><h3 id="Inhibitors">Inhibitors<a class="anchor-link" href="#Inhibitors">&#182;</a></h3><p>Another objective that is very important to League of Legends are a team's inhibitors (each team has 3). Located in the team's base, taking these structures down causes super minions to spawn against the team that loses them. Super minions are significantly harder to kill than regular minions and are more effective at applying pressure against the team with the broken inhibitor. Let's calculate the win rate of the team that takes one of the other's inhibitors first.</p>
+<h2 id="Impacts-of-Other-Objectives">Impacts of Other Objectives<a class="anchor-link" href="#Impacts-of-Other-Objectives">&#182;</a></h2><h3 id="Inhibitors">Inhibitors<a class="anchor-link" href="#Inhibitors">&#182;</a></h3><p>Another objective that is very important in League of Legends are a team's inhibitors (each team has 3). Located in the team's base, taking these structures down causes super minions to spawn against the team that loses them. Super minions are significantly harder to kill than regular minions and are more effective at applying pressure against the team with the broken inhibitor. Let's calculate the win rate of the team that takes one of the other's inhibitors first (don't worry, we will plot it later).</p>
 
 </div>
 </div>
@@ -15289,7 +15289,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Dragon">Dragon<a class="anchor-link" href="#Dragon">&#182;</a></h3><p>Lastly, we will look at taking the first dragon. Dragon is the last neutral objective we will look at. Dragons grant small buffs that last for the remainder of the match. The advantage gained from a single drake is not very large, but it is relatively consistent. Note that we will only look at the win rate after taking the first dragon, so stacking drakes will not be considered.</p>
+<h3 id="Dragon">Dragon<a class="anchor-link" href="#Dragon">&#182;</a></h3><p>Lastly, we will look at taking the first dragon. Dragon is the last objective we will look at. Dragons grant small buffs that last for the remainder of the match. The advantage gained from a single drake is not very large, but it is relatively consistent. Note that we will only look at the win rate after taking the first dragon, so stacking drakes will not be considered.</p>
 
 </div>
 </div>
@@ -15331,7 +15331,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Win-Rate-Comparison">Win Rate Comparison<a class="anchor-link" href="#Win-Rate-Comparison">&#182;</a></h3><p>Plotting the win rates of these objectives can show intuitively which objectives have the most impact on the outcome of the game.</p>
+<h3 id="Win-Percentage-Comparison">Win Percentage Comparison<a class="anchor-link" href="#Win-Percentage-Comparison">&#182;</a></h3><p>Plotting the win percentages of these objectives can show intuitively which objectives have the most impact on the outcome of the game.</p>
 
 </div>
 </div>
@@ -15390,7 +15390,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>From this plot, we can see that Baron has the highest impact on the outcome of the game. This is not very surprising considering how strong the buff from this objective is. It is not surprising that taking first dragon does not impact the game very much, as the buff is relatively weak. Taking this buff early does not net a win rate much above 50%. A 50% win rate would mean that this objective has no impact on the outcome of the game, as wins and losses would average out to 50%.</p>
+<p>From this plot, we can see that Baron has the highest impact on the outcome of the game. This is not very surprising considering how strong the buff from this objective is. It is not surprising that taking first dragon does not impact the game very much, as the buff is relatively weak. Taking this buff early does not net a win rate much above 50%. A 50% win percentage would mean that this objective has no impact on the outcome of the game, as wins and losses would average out to roughly 50%.</p>
 
 </div>
 </div>
@@ -15590,7 +15590,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Great! Using this model on our test set, we had an 84% correct prediction rate, meaning we used the model to predict the outcome on the remaining 20% of our data, and 84% of the predictions were correct. However, this could be and outlier due to a lucky choice in the training set and test set. Let's run our analysis a few more times, separating the data into different combinations of training sets and test sets to see what the accuracy is, on average.</p>
+<p>Great! Using this model on our test set, we had an 84% correct prediction rate, meaning we used the model to predict the outcome on the remaining 20% of our data, and 84% of those predictions were correct. However, this could be and outlier due to a lucky choice in the training set and test set. Let's run our analysis a few more times, separating the data into different combinations of training sets and test sets to see what the accuracy of our model is, on average.</p>
 
 </div>
 </div>
@@ -15853,6 +15853,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
             <span class="n">adc_items</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;Shieldbow Total&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
             <span class="k">if</span> <span class="n">summoner</span><span class="p">[</span><span class="s1">&#39;win&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
                 <span class="n">adc_items</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;Shieldbow Wins&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                
         <span class="c1">#using the data to fill in the champion names because it&#39;s more efficient than looking them all up in the api</span>
         <span class="k">if</span> <span class="n">adc_items</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;Champion Name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;No Data&#39;</span><span class="p">:</span>
             <span class="n">adc_items</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;Champion Name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">summoner</span><span class="p">[</span><span class="s1">&#39;championName&#39;</span><span class="p">]</span>
@@ -16400,7 +16401,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This plot is very interesting, as we can see how certain champions may synergize better with one Mythic item over another. For example, Miss Fortune has higher win rates when building both Galeforce and Kraken Slayer over building Shieldbow. Miss Fortune's damage is more burst-focused, and therefore she benefits from having the extra burst damage from empowered Kraken Slayer auto attacks and from the Galeforce execute dash-projectiles. Another champion to look at is Ashe. By default, Ashe does not do a lot of damage compared to most other ADCs. However, Ashe has a lot more utility at her disposal than most other ADCs, allowing her to set her team up for success. Because she does not do a lot of damage on her own, she benefits heavily from building Mythics which allow her to do more damage, covering her biggest weakness. Shieldbow is not very useful on Ashe because staying alive longer in a fight does not matter when you do not do enough damage to be a threat.</p>
+<p>This plot is very interesting, as we can see how certain champions may synergize better with one Mythic item over another. For example, Miss Fortune has higher win rates when building both Galeforce and Kraken Slayer over building Shieldbow. Miss Fortune's damage is more burst-focused, and therefore she benefits from having the extra burst damage from empowered Kraken Slayer auto attacks and from the Galeforce execute dash-projectiles. Another champion to look at is Ashe. By default, Ashe does not do a lot of damage compared to most other ADCs. However, Ashe has a lot more utility at her disposal than most other ADCs, allowing her to set her team up for success. Because she does not do a lot of damage on her own, she benefits heavily from building Mythics that allow her to do more damage, covering her biggest weakness. Shieldbow is not very useful on Ashe because staying alive longer in a fight does not matter when you do not do enough damage to be a threat.</p>
 
 </div>
 </div>
@@ -16408,7 +16409,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The flaw with this map is it may misrepresent some champions, as the sample size for many of the champions shown is quite small. The meta also effects how this plot looks. During any given meta, roughly 4-5 ADCs are played at a significantly higher rate than the other ADCs. In this meta, Jinx has a very large sample size because she is in meta on the current patch, while a champion like KogMaw only has a few games played because they are not in meta. Another misrepresentation in this data is known optimal builds on specific champions. For example, Vayne has a massive amount of damage built into her kit (champion abilities) by default. Because of this, almost everyone builds Shieldbow on her because it helps you stay alive longer and she does not benefit much from the extra damage the other Mythics would grant. However, looking at this plot, you would think that you should be building Galeforce on Vayne because it is a higher win rate, when in reality those are most likely outlier games where Vayne's team happen to win.</p>
+<p>The flaw with this map is it may misrepresent some champions, as the sample size for many of the champions shown is quite small. The meta also effects how this plot looks. During any given meta, roughly 4-5 ADCs are played at a significantly higher rate than the other ADCs. In this meta, Jinx has a very large sample size because she is in meta on the current patch, while a champion like KogMaw only has a few games played because they are not in meta. Another misrepresentation in this data is known optimal builds on specific champions. For example, Vayne has a massive amount of damage built into her kit (due to her champion abilities) by default. Because of this, almost everyone builds Shieldbow on her because it helps you stay alive longer and she does not benefit much from the extra damage the other Mythics would grant. However, looking at this plot, you would think that you should be building Galeforce on Vayne because it is a higher win rate, when in reality those are most likely outlier games where Vayne's team happened to win.</p>
 
 </div>
 </div>
@@ -16671,7 +16672,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We have the puuid of each player, so now we can go through and request a list of match IDs for the 100 most recent matches played by each player. Because these players are at the very top of the leaderboard, it is likely that many of them play with/against each other. We need to drop all duplicate matches so we are only analyzing the data from a given match once.</p>
+<p>We have the puuid of each player, so now we can go through and request a list of match IDs for the 100 most recent matches played by each player. Because these players are at the very top of the leaderboard, it is likely that many of them play with/against each other. At the end, we need to drop all duplicate matches so we are only analyzing the data from a given match once.</p>
 
 </div>
 </div>
@@ -16821,7 +16822,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Awesome! Now we have a csv file filled with thousands of matches from the top players.</p>
+<p>Awesome! Now we have a csv file filled with thousands of matches from the top players and we are ready to start our analysis.</p>
 
 </div>
 </div>
